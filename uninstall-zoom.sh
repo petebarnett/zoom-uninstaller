@@ -7,8 +7,10 @@ fi
 echo "Stopping running Zoom processes"
 killall -9 zoom.us
 killall -9 ZoomOpener
-echo "Removing main application"
+echo "Removing main application directory"
 rm -rf /Applications/zoom.us.app
+echo "Removing zoom home directory"
+rm -rf ~/.zoomus
 echo "Removing application support"
 rm -rf ~/Library/Application\ Support/zoom.us
 echo "Removing application caches"
